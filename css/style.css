@@ -77,9 +77,16 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    
+    /* Voltamos a alinhar os elementos pela base da tela... */
     justify-content: flex-end; 
     align-items: center;
-    padding: 0 20px 80px 20px; 
+    
+    /* ...MAS aqui está o truque de Sênior: 
+       O '20vh' no padding-bottom significa que estamos empurrando o bloco 
+       para cima em exatos 20% da altura da tela do usuário. 
+       Isso tira o texto do centro e o coloca naquele "ponto de ouro" mais abaixo. */
+    padding: 0 20px 15vh 20px; 
 }
 
 /* O NOVO H1: Tipografia sofisticada, estilo revista de luxo */
